@@ -1,0 +1,93 @@
+.headermini {
+  background-color: var(--background);
+  height: 314px;
+  width: 100vw;
+}
+.headermini nav {
+  height: 64px;
+  width: 100vw;
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+}
+.headermini .minmenu {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+.headermini nav div {
+  width: 90px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+.headermini .day {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headermini .day h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.headermini div a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headermini nav img {
+  width: 25px;
+  height: 25px;
+  filter: invert(80%);
+}
+.headermini section {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.headermini section .imgen {
+  height: 250px;
+  width: 100%;
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  animation: zoomBanner 2.5s;
+}
+.place2 {
+  height: 64px;
+  width: 100vw;
+}
+@keyframes stickybar2 {
+    0% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+.sticky2 {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  animation: stickybar 0.3s linear;
+}
+.hero2 {
+  height: 50px;
+  width: 100vw;
+  position: absolute;
+  top: 150px;
+}
+

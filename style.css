@@ -1,0 +1,9 @@
+/* UTILS */
+@import url(./styles/utils/_reset.css);
+@import url(./styles/utils/_palette.css);
+/* GLOBAL */
+@import url(./styles/blocks/_global.css);
+/* BLOCKS */
+@import url(./styles/blocks/header.css);
+@import url(./styles/blocks/headerMini.css);
+@import url(./styles/blocks/main.css);

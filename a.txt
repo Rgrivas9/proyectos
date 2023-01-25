@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="./public/icons/menus.png" alt="line menu"></a>
+        <a href="#"><h1>dayseeker</h1></a>
+        <ul>
+          <li><a href="#"><img src="./public/icons/lupa.png" alt="magnifier"></a></li>
+          <li><a href="#"><img src="./public/icons/compra.png" alt="shopping"></a></li>
+        </ul>
+      </nav>
+      <img src="" alt="">
+    </header>
+  </body>
+</html>

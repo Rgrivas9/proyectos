@@ -1,0 +1,249 @@
+/* ------------------------------------------------------------------.media */
+header .media img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(400%);
+}
+header .media {
+  height: 31.75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .media div {
+  margin: 0 40px;
+  height: 100%;
+  width: 100%;
+  max-width: 1420px;
+  display: flex;
+  justify-content: flex-end;
+}
+header .media div ul {
+  height: 100%;
+  width: 104px;
+  display: flex;
+}
+header .media ul li {
+  width: 26px;
+  height: 100%;
+}
+header .media a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+}
+/* --------------------------------------------------------------------nav */
+@keyframes stickybar {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+header .placeHolder {
+  min-height: 90px;
+  width: 100vw;
+}
+header .backnav {
+  min-height: 90px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+}
+header .sticky {
+  position: fixed;
+  top: -10px;
+  width: 100vw;
+  overflow: hidden;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  animation: stickybar 0.3s linear;
+}
+header .nav {
+  min-height: 90px;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+header .nav nav {
+  width: 100%;
+  margin: 0 37px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 104px;
+  height: 43px;
+  padding: 7.5px 12px;
+  padding-left: 10px;
+}
+header .search a {
+  width: 52px;
+}
+header .nav .menu {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu div {
+  height: 100%;
+  width: calc(35%);
+  display: flex;
+  align-items: center;
+}
+header .menu .firstmenu {
+  justify-content: flex-end;
+}
+header .menu .secondmenu {
+  justify-content: flex-start;
+}
+header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .menu li {
+  height: 35.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .menu a {
+  color: var(--primary);
+  letter-spacing: 2.5px;
+  font-size: 13px;
+  padding: 7.5px 15px;
+  padding-top: 9px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1, 0.95);
+}
+header .menu .h1 {
+  letter-spacing: -0.5px;
+  height: 100%;
+  width: 186.7px;
+  margin: 0 30px;
+}
+header .menu h1 {
+  color: var(--primary);
+  height: 100%;
+  display: flex;
+  transform: scale(1, 1.05);
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 29.9px;
+  padding-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+header .nav .login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .login li {
+  width: 52px;
+  height: 43px;
+  padding: 7.5px 12px;
+  padding-right: 0px;
+}
+header .login a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav img {
+  height: 28px;
+  width: 28px;
+  filter: invert(80%);
+}
+header .search img {
+  height: 20px;
+  width: 20px;
+}
+header .firstmenu li div {
+  background-color: var(--primary);
+  height: 3px;
+  width: 0;
+  margin-left: 15px;
+  transition: all 0.3s ease-in-out;
+}
+header .firstmenu li:hover div {
+  width: calc(100% - 30px);
+}
+header .secondmenu li div {
+  background-color: var(--primary);
+  height: 3px;
+  width: 0;
+  margin-left: 15px;
+  transition: all 0.3s ease-in-out;
+}
+header .secondmenu li:hover div {
+  width: calc(100% - 30px);
+}
+.headermini {
+  display: none !important;
+}
+/* -------------------------------------------------------------------.hero */
+header > .hero {
+  height: 750px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .hero > img {
+  animation: zoomBanner 2.5s;
+  object-fit: cover;
+  min-width: 1300px;
+}
+
+@keyframes zoomBanner {
+  0% {
+    transform: scale(1.5);
+    filter: blur(14px) brightness(0%) saturate(0%);
+    opacity: 0;
+  }
+
+  100% {
+    width: 100vw;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  header {
+    display: none !important;
+  }
+  .headermini {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
