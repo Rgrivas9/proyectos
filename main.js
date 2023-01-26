@@ -36,10 +36,10 @@ const stickybar2 = () => {
 };
 
 window.addEventListener("scroll", () => {
-  if (window.innerWidth > 770) {
+  if (window.innerWidth > 769) {
     stickybar();
   }
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 769) {
     stickybar2();
   }
 });
