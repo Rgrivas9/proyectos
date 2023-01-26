@@ -1,28 +1,45 @@
 import "./style.css";
 
 const hero = document.getElementById("hero");
-const sticky = hero.offsetTop;
+let sticky = hero.offsetTop;
 const navbar = document.getElementById("navbar");
 
 const hero2 = document.querySelector(".hero2");
-const stick = hero2.offsetTop;
+let stick = hero2.offsetTop;
 const navbar2 = document.querySelector(".navbar2");
 
 const stickybar = () => {
+  sticky = hero.offsetTop;
   if (window.pageYOffset >= sticky) {
     navbar.classList.remove("backnav");
     navbar.classList.add("sticky");
-  } else {
+    navbar2.classList.remove("sticky2");
+  }
+  if (window.pageYOffset < sticky) {
+    navbar.classList.remove("sticky");
+    navbar.classList.add("backnav");
+    navbar2.classList.remove("sticky2");
+  }
+};
+const stickybar2 = () => {
+  stick = hero2.offsetTop;
+  if (window.pageYOffset >= stick) {
+    navbar2.classList.add("sticky2");
+    navbar.classList.remove("sticky");
+    navbar.classList.add("backnav");
+  }
+  if (window.pageYOffset < stick) {
+    navbar2.classList.remove("sticky2");
     navbar.classList.remove("sticky");
     navbar.classList.add("backnav");
   }
 };
-const stickybar2 = () => {
-  if (window.pageYOffset >= stick) {
-    navbar2.classList.add("sticky2");
-  } else {
-    navbar2.classList.remove("sticky2");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth > 770) {
+    stickybar();
   }
-};
-window.addEventListener("scroll", () => stickybar());
-window.addEventListener("scroll", () => stickybar2());
+  if (window.innerWidth < 768) {
+    stickybar2();
+  }
+});
