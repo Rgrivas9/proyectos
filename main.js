@@ -36,7 +36,7 @@ const stickybar2 = () => {
 };
 
 window.addEventListener("scroll", () => {
-  if (window.innerWidth > 769) {
+  if (window.innerWidth > 769 && window.innerHeight> 500) {
     stickybar();
   }
   if (window.innerWidth < 769) {
